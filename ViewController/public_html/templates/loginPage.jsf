@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component" xmlns:c="http://java.sun.com/jsp/jstl/core"
+                    xmlns:f="http://java.sun.com/jsf/core">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>loginPage</afc:display-name>
+        </afc:component>
+    </af:xmlContent>
+    <c:set var="viewcontrollerBundle" value="#{adfBundle['view.loginBundle']}"/>
+    <af:panelStretchLayout id="ps1" topHeight="350px" bottomHeight="0px" dimensionsFrom="parent">
+        <f:facet name="top">
+            <af:panelStretchLayout id="ps2" topHeight="150px" bottomHeight="0px">
+                <f:facet name="top">
+                    <af:panelGroupLayout halign="left" valign="middle" styleClass="v7LogoWithSloganContainer" id="pgl3">
+                        <af:image styleClass="v7LogoWithSlogan" shortDesc="virtual7 logo" source="/images/v7_small_logo.png" id="i1"/>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <f:facet name="center">
+                    <af:panelGroupLayout id="pgl1" layout="vertical" halign="center" styleClass="v7LoginGontainer">
+                        <af:form id="f1" defaultCommand="loginSubmitButton">
+                            <af:panelFormLayout id="pfl1">
+                                <af:inputText value="#{backingBeanScope.authManagerBB.username}" styleClass="v7LoginInput" label="User name:" id="it2"/>
+                                <af:inputText value="#{backingBeanScope.authManagerBB.password}" styleClass="v7LoginInput" label="Password:" secret="true"
+                                              id="it1"/>
+                                <af:spacer height="5px" id="s1"/>
+                                <af:button partialSubmit="true" clientComponent="true" action="#{backingBeanScope.authManagerBB.doLogin}" styleClass="v7LoginButton" text="Login"
+                                           id="loginSubmitButton"/>
+                            </af:panelFormLayout>
+                        </af:form>
+                    </af:panelGroupLayout>
+                </f:facet>
+            </af:panelStretchLayout>
+        </f:facet>
+        <f:facet name="center">
+            <af:panelGroupLayout id="pg3" styleClass="v7LoginGontainer" valign="bottom">
+                <af:image source="/images/v7_big_logo_crop.png" styleClass="v7BigLogo" id="i2" shortDesc="virtual7 Logo"/>
+            </af:panelGroupLayout>
+        </f:facet>
+    </af:panelStretchLayout>
+</af:pageTemplateDef>

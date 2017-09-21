@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+.v7LoginInput af|inputText::label{
+    color: White;
+    font-size: 25px;
+    font-family: Helvetica;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.v7LoginInput af|inputText::content{
+    line-height: 28px;
+    font-size: 22px;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.v7LoginButton{
+    float: right;
+}
+
+.v7LogoWithSloganContainer {
+    margin-left: 50px; 
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.v7LogoWithSlogan{
+    max-height: 100%;
+    max-width: 100%;
+}
+.v7LoginGontainer {
+    background-color: #a7bf44;
+}
+.v7LogoSimpleContainer{
+    overflow: hidden;
+    background-color: #a7bf44;
+    height: 100%;
+    width: 100%;
+}
+
+.v7BigLogo {
+    height: 100%;
+    bottom: 0px;
+    position: relative;
+}
+
+@media screen and (max-height:875px) {
+    .v7LoginInput af|inputText::label{
+        font-size: 18px;
+        font-family: Helvetica;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    
+    .v7LoginInput af|inputText::content{
+        line-height: 18px;
+        font-size: 15px;
+        width: 200px;
+        height: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+/* Page template */
+
+@media screen and (min-width:600px) {
+    .SettingsPanelBox {
+        width: 50%;
+        float: left;
+        height: 400px;
+    }
+    .OPBigNavigation {
+        margin-top: 10px;
+        display: block;
+    }
+    .OPNarrowNavigation {
+        display: none;
+    }
+    .OpGlobalNavbar {
+        display: block;
+    }
+    .AFBrandingBar.AFBrandingBarTall {
+        height: 105px;
+        overflow: hidden;
+        border-bottom: 3px solid #F5F5F5;
+        box-shadow: 0px 5px 0px rgb(167, 191, 68);
+    }
+    .OPBigLogo {
+        display: block;
+    }
+    .OPSmallLogo {
+        display: none;
+    }
+    .AFWelcomeImage {
+        top:45px;
+        left:100px;
+        position: relative;
+        width: 200px;
+        box-shadow: 5px 10px 30px #000000;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .SettingsPanelBox {
+        width: 100%;
+        float: left;
+    }
+    .OPBigNavigation {
+        margin-top: 10px;
+        display: none;
+    }
+    .OPNarrowNavigation {
+        display: block;
+        top: -55px;
+    }
+    .OpGlobalNavbar {
+        display: none;
+    }
+    .AFBrandingBarItem {
+        display: none;
+    }
+    .AFBrandingBar.AFBrandingBarTall {
+        height: 105px;
+        overflow: hidden;
+        border-bottom: 3px solid #F5F5F5;
+        box-shadow: 0px 5px 0px rgb(167, 191, 68);
+    }
+    .OPBigLogo {
+        display: none;
+    }
+    .OPSmallLogo {
+        display: block;
+        padding-top: 5px;
+        border-radius: 10px;
+    }
+    .AFWelcomeImage {
+        top:45px;
+        left:30px;
+        position: relative;
+        width: 200px;
+        box-shadow: 5px 10px 30px #000000;
+    }
+}
+
+/*  Anchor, hsl(207, 95%, 42%), #0572ce */
+.AFActiveColor:alias {
+    color: rgb(167, 191, 68);
+}
+/*  Derivatives of AFActiveColor, hsl(207, 95%, 41%), #0572ce */
+.AFButtonActiveColor:alias {
+    color: rgb(167, 191, 68);
+}
+/*  Derivatives of AFButtonActiveColor, hsl(207, 95%, 41%), #0572ce */
+.AFButtonBorderActiveColor:alias {
+    color: rgb(167, 191, 68);
+}
+/*  Derivatives of AFButtonActiveColor, hsl(207, 95%, 42%), #0572ce */
+.AFButtonTextHoverColor:alias {
+    color: rgb(167, 191, 68);
+}
+/*  Derivatives of AFButtonActiveColor, hsl, #0572ce */
+.AFIconActiveColor:alias {
+    color: rgb(167, 191, 68);
+}
+/*  Derivatives of AFSelectedColor, hsl(207, 95%, 41%), #0572ce */
+.AFListSeparatorColor:alias {
+    color: rgb(167, 191, 68);
+}
+/*  Anchor, hsl(205, 100%, 25%), #0572ce */
+.AFRequiredColor:alias {
+    color: rgb(167, 191, 68);
+}
+/*  Derivatives of , hsl(207, 95%, 41%), #0572ce */
+.AFTabSelectedBorderAccentColor:alias {
+    color: rgb(167, 191, 68);
+}
+
+.SettingsPanelBoxChild {
+    height: 380px !important;
+}
+
+.OpLink af|link::text {
+    color: rgb(87, 87, 86);
+    font-family: ROBOTO;
+}
+
+.OpUserName af|link::text {
+    color: rgb(87, 87, 86);
+    font-family: ROBOTO;
+}
+
+.AFBrandingLogoTitleContainer {
+    top: 12px;
+}
+
+.BrandingMaxWidth {
+    width: 100%;
+    border-bottom: 20px solid rgb(167, 191, 68);
+}
+
+.OpAFStretchHeight {
+    height: 100% !important;
+}
+
+af|navigationPane-buttons::link {
+    font-family: ROBOTO;
+    width: 100px;
+    color: rgb(87, 87, 86);
+}
+
+.AFBrandingLinkColor:alias, .AFLinkColor:alias {
+    color: rgb(87, 87, 86);
+}
+
+.AFBrandingBar af|navigationPane-buttons::link:hover, af|navigationPane-buttons::link:selected, .AFBrandingLinkActiveColor:alias {
+    background-color: rgb(87, 87, 86);
+    color: white;
+    border-color: rgb(87, 87, 86);
+    font-family: ROBOTO;
+    width: 100px;
+}

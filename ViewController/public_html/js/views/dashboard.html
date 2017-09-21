@@ -1,0 +1,93 @@
+<div id='chart-container'>
+    <div id="legend1" 
+            aria-controls="barChart1 bubbleChart barChart2 areaChart pieChart funnelChart"
+            data-bind="ojComponent: {
+            component: 'ojLegend', 
+            orientation: 'horizontal',
+            sections: legendSections,
+            halign: 'center', valign: 'middle',
+            hiddenCategories: hiddenCategoriesValue,
+            hideAndShowBehavior: 'on'
+            }"
+         style="width:100%; height:25px;">
+    </div>
+    <div class="oj-flex">
+        <div class="oj-flex-item oj-lg-6">
+            <div id="barChart1" data-bind="ojComponent: {
+                component: 'ojChart', 
+                type: 'bar', 
+                series: categoricalSeriesValue, 
+                groups: categoricalGroupsValue, 
+                animationOnDisplay: 'auto',
+                animationOnDataChange: 'auto',
+                hiddenCategories: hiddenCategoriesValue,
+                legend: {rendered: 'off'}}"
+                 style="width:100%;height:225px;float:left;">
+            </div>
+        </div>
+        <div class="oj-flex-item oj-lg-6">
+            <div id="bubbleChart" data-bind="ojComponent: {
+                component: 'ojChart', 
+                type: 'bubble', 
+                series: bubbleSeriesValue, 
+                animationOnDisplay: 'auto', 
+                animationOnDataChange: 'auto',
+                hiddenCategories: hiddenCategoriesValue,
+                legend: {rendered: 'off'}}"
+                 style="width:100%;height:225px;float:left;">
+            </div>
+        </div>
+        <div class="oj-flex-item oj-lg-6">
+            <div id="barChart2" data-bind="ojComponent: {
+                component: 'ojChart', 
+                type: 'bar', 
+                series: timeSeriesValue, 
+                groups: timeGroupsValue, 
+                animationOnDisplay: 'auto',
+                animationOnDataChange: 'auto',
+                hiddenCategories: hiddenCategoriesValue,
+                legend: {rendered: 'off'}}"
+                 style="width:100%;height:225px;float:left;">
+            </div>
+        </div>
+        <div class="oj-flex-item oj-lg-6">
+            <div id="areaChart" data-bind="ojComponent: {
+                component: 'ojChart', 
+                type: 'area', 
+                series: timeSeriesValue, 
+                groups: timeGroupsValue, 
+                stack: 'on',
+                animationOnDisplay: 'auto',
+                animationOnDataChange: 'auto',
+                hiddenCategories: hiddenCategoriesValue,
+                legend: {rendered: 'off'}}"
+                 style="width:100%;height:225px;float:left;">
+            </div>
+        </div>
+        <div class="oj-flex-item oj-lg-6">
+            <div id="pieChart" data-bind="ojComponent: {
+                component: 'ojChart', 
+                type: 'pie', 
+                series: pieSeriesValue, 
+                animationOnDisplay: 'auto',
+                animationOnDataChange: 'auto',
+                hiddenCategories: hiddenCategoriesValue,
+                legend: {rendered: 'off'}}"
+                 style="width:100%;height:225px;float:left;">
+            </div>
+        </div>
+        <div class="oj-flex-item oj-lg-6">
+            <div id="funnelChart" data-bind="ojComponent: {
+                component: 'ojChart', 
+                type: 'funnel', 
+                series: pieSeriesValue, 
+                orientation: 'horizontal',
+                animationOnDisplay: 'auto',
+                animationOnDataChange: 'auto',
+                hiddenCategories: hiddenCategoriesValue,
+                legend: {rendered: 'off'}}"
+                 style="width:100%;height:225px;float:left;">
+            </div>
+        </div>
+    </div>
+</div>
